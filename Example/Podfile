@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'MJAiSearchPartSDK_Example' do
+  pod 'MJAiSearchPartSDK', :path => '../'
+
+  target 'MJAiSearchPartSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
