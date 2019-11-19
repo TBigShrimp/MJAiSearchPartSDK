@@ -1,0 +1,6 @@
+framework module MJAiSearchPartSDK {
+  umbrella header "MJAiSearchPartSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

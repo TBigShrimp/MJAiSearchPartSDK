@@ -24,6 +24,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		A6B951682ACB86B8781C93BF /* Pods_MJAiSearchPartSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FAD66471A6C9309D243238 /* Pods_MJAiSearchPartSDK_Example.framework */; };
+		B02F16272383956B0069B807 /* MJPrintJsonLog.m in Sources */ = {isa = PBXBuildFile; fileRef = B02F16262383956B0069B807 /* MJPrintJsonLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,12 +60,14 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6DA640A53DA72341100956B8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6DA640A53DA72341100956B8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		85A13E37F9B713E419CE79E4 /* MJAiSearchPartSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MJAiSearchPartSDK.podspec; path = ../MJAiSearchPartSDK.podspec; sourceTree = "<group>"; };
+		85A13E37F9B713E419CE79E4 /* MJAiSearchPartSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MJAiSearchPartSDK.podspec; path = ../MJAiSearchPartSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		877825334990B67278A3407A /* Pods-MJAiSearchPartSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJAiSearchPartSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-MJAiSearchPartSDK_Example/Pods-MJAiSearchPartSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		904B32818684836E1305E4B6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		904B32818684836E1305E4B6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B02F16252383956B0069B807 /* MJPrintJsonLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPrintJsonLog.h; sourceTree = "<group>"; };
+		B02F16262383956B0069B807 /* MJPrintJsonLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPrintJsonLog.m; sourceTree = "<group>"; };
 		BE130A8CF249F79B87F92514 /* Pods_MJAiSearchPartSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MJAiSearchPartSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A8E5B6F287EDD1CDDC5D83 /* Pods-MJAiSearchPartSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJAiSearchPartSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MJAiSearchPartSDK_Tests/Pods-MJAiSearchPartSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +140,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* MJViewController.h */,
 				6003F5A6195388D20070C39A /* MJViewController.m */,
+				B02F16252383956B0069B807 /* MJPrintJsonLog.h */,
+				B02F16262383956B0069B807 /* MJPrintJsonLog.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -193,7 +198,6 @@
 				D8A8E5B6F287EDD1CDDC5D83 /* Pods-MJAiSearchPartSDK_Tests.debug.xcconfig */,
 				05AF047E199ABC7A92C94A7B /* Pods-MJAiSearchPartSDK_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +262,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -323,12 +328,9 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MJAiSearchPartSDK_Example/Pods-MJAiSearchPartSDK_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MJAiSearchPartSDK/MJAiSearchPartSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJAiSearchPartSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -367,6 +369,7 @@
 				6003F59E195388D20070C39A /* MJAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* MJViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				B02F16272383956B0069B807 /* MJPrintJsonLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +454,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -483,6 +487,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -497,7 +502,24 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MJAiSearchPartSDK/MJAiSearchPartSDK-Prefix.pch";
 				INFOPLIST_FILE = "MJAiSearchPartSDK/MJAiSearchPartSDK-Info.plist";
+				"LD_MAP_FILE_PATH[arch=*]" = "$(TARGET_TEMP_DIR)/$(PRODUCT_NAME)-LinkMap-$(CURRENT_VARIANT)-$(CURRENT_ARCH).txt";
 				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MJAiSearchPartSDK\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -514,6 +536,22 @@
 				GCC_PREFIX_HEADER = "MJAiSearchPartSDK/MJAiSearchPartSDK-Prefix.pch";
 				INFOPLIST_FILE = "MJAiSearchPartSDK/MJAiSearchPartSDK-Info.plist";
 				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MJAiSearchPartSDK\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

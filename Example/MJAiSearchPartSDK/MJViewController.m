@@ -7,7 +7,7 @@
 //
 
 #import "MJViewController.h"
-
+#import <MJAiSearchPartSDK/MJAiSearchPart.h>
 @interface MJViewController ()
 
 @end
@@ -17,7 +17,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [MJAiSearchPart test];
+
+    
 }
 
 - (void)didReceiveMemoryWarning

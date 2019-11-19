@@ -1,0 +1,6 @@
+framework module MJNetwork {
+  umbrella header "MJNetwork-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,6 +1,8 @@
 use_frameworks!
 
-platform :ios, '8.0'
+platform :ios, '9.0'
+#在 podfile 文件中增加 修改podfile不用clean
+install! 'cocoapods', :disable_input_output_paths => true
 
 target 'MJAiSearchPartSDK_Example' do
   pod 'MJAiSearchPartSDK', :path => '../'
