@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - MJAiSearchPartSDK (0.1.0):
+  - MJAiSearchPartSDK (0.1.1):
     - AFNetworking
 
 DEPENDENCIES:
@@ -30,7 +30,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  MJAiSearchPartSDK: 7342ff9e974916f738164338cb35255f85a7cf4f
+  MJAiSearchPartSDK: 0c47edec2f34049cddd469111051058cfc616240
 
 PODFILE CHECKSUM: af8d09303ee1b0de7838dc1a52ddc11d0d7436f5
 
