@@ -1,0 +1,6 @@
+framework module MJAISearchLib {
+  umbrella header "MJAISearchLib.h"
+
+  export *
+  module * { export * }
+}

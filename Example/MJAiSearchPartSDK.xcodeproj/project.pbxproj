@@ -25,6 +25,7 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		A6B951682ACB86B8781C93BF /* Pods_MJAiSearchPartSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FAD66471A6C9309D243238 /* Pods_MJAiSearchPartSDK_Example.framework */; };
 		B02F16272383956B0069B807 /* MJPrintJsonLog.m in Sources */ = {isa = PBXBuildFile; fileRef = B02F16262383956B0069B807 /* MJPrintJsonLog.m */; };
+		B0CFA0E3238662CA000036B5 /* MJResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B0CFA0E2238662CA000036B5 /* MJResources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		904B32818684836E1305E4B6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B02F16252383956B0069B807 /* MJPrintJsonLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPrintJsonLog.h; sourceTree = "<group>"; };
 		B02F16262383956B0069B807 /* MJPrintJsonLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPrintJsonLog.m; sourceTree = "<group>"; };
+		B0CFA0E2238662CA000036B5 /* MJResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJResources.bundle; sourceTree = "<group>"; };
 		BE130A8CF249F79B87F92514 /* Pods_MJAiSearchPartSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MJAiSearchPartSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A8E5B6F287EDD1CDDC5D83 /* Pods-MJAiSearchPartSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJAiSearchPartSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MJAiSearchPartSDK_Tests/Pods-MJAiSearchPartSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +137,7 @@
 		6003F593195388D20070C39A /* Example for MJAiSearchPartSDK */ = {
 			isa = PBXGroup;
 			children = (
+				B0CFA0E2238662CA000036B5 /* MJResources.bundle */,
 				6003F59C195388D20070C39A /* MJAppDelegate.h */,
 				6003F59D195388D20070C39A /* MJAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -285,6 +288,7 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				B0CFA0E3238662CA000036B5 /* MJResources.bundle in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,6 +510,7 @@
 				MODULE_NAME = ExampleApp;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
+					"-ObjC",
 					"-framework",
 					"\"AFNetworking\"",
 					"-framework",
@@ -518,7 +523,6 @@
 					"\"Security\"",
 					"-framework",
 					"\"SystemConfiguration\"",
-					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -538,6 +542,7 @@
 				MODULE_NAME = ExampleApp;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
+					"-ObjC",
 					"-framework",
 					"\"AFNetworking\"",
 					"-framework",
@@ -550,7 +555,6 @@
 					"\"Security\"",
 					"-framework",
 					"\"SystemConfiguration\"",
-					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

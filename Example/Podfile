@@ -6,10 +6,13 @@ install! 'cocoapods', :disable_input_output_paths => true
 
 target 'MJAiSearchPartSDK_Example' do
   pod 'MJAiSearchPartSDK', :path => '../'
-
+  pod 'SDWebImage'
+  
+  
+  
   target 'MJAiSearchPartSDK_Tests' do
     inherit! :search_paths
-
+    
     
   end
 end

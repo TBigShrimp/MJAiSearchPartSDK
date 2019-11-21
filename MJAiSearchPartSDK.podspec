@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MJAiSearchPartSDK'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'MJAiSearchPartSDK 智能配件查询'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.source_files = 'MJAiSearchPartSDK/Classes/**/*'
   
   #s.libraries     = 'z', 'sqlite3' #表示依赖的系统类库，比如libz.dylib等
-  s.vendored_frameworks = 'frameworks/MJNetwork.framework' # 依赖的第三方/自己的framework
+  s.vendored_frameworks = 'frameworks/MJNetwork.framework','frameworks/MJAISearchLib.framework' # 依赖的第三方/自己的framework
   #s.vendored_libraries = 'Library/Classes/libWeChatSDK.a'#表示依赖第三方/自己的静态库（比如libWeChatSDK.a）
   #依赖的第三方的或者自己的静态库文件必须以lib为前缀进行命名，否则会出现找不到的情况，这一点非常重要
 

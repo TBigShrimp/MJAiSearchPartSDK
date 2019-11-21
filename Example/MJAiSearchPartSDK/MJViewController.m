@@ -7,8 +7,10 @@
 //
 
 #import "MJViewController.h"
-#import <MJAiSearchPartSDK/MJAiSearchPart.h>
-@interface MJViewController ()
+#import <MJAISearchLib/MJAiSearchPart.h>
+#import <MJAISearchLib/MJDrawCircleViewController.h>
+
+@interface MJViewController ()<MJCanvasCircleSelectedPartProtocol>
 
 @end
 
@@ -17,11 +19,38 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     [MJAiSearchPart test];
-
+    
+    MJDrawCircleViewController *dw = [[MJDrawCircleViewController alloc] init];
+    [dw setLineColor:[UIColor yellowColor]];
+    dw.delegate = self;
+    [dw willMoveToParentViewController:self];
+    dw.view.clipsToBounds = NO;
+    dw.carTopOffset = 330;
+    dw.carBottomOffset = -60;
+    [self addChildViewController:dw];
+    [self.view addSubview:dw.view];
+    [dw didMoveToParentViewController:self];
+    
+}
+/**
+ 圈选之后开始请求
+ */
+- (void)canvasCircleRequestStart:(NSArray *)partsPosition{
+    
+    
+    
     
 }
 
+/**
+ 圈选区域警示代理   提示用户圈选区域太小或者未圈到车体区域
+ 
+ */
+- (void)canvasDrawOutSide{
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
