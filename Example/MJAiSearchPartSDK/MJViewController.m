@@ -20,7 +20,6 @@
 {
     [super viewDidLoad];
     
-    [MJAiSearchPart test];
     
     MJDrawCircleViewController *dw = [[MJDrawCircleViewController alloc] init];
     [dw setLineColor:[UIColor yellowColor]];

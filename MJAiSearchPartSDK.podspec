@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MJAiSearchPartSDK'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'MJAiSearchPartSDK 智能配件查询'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  #s.source_files = 'MJAiSearchPartSDK/Classes/**/*'
+  s.source_files = 'MJAiSearchPartSDK/Classes/**/*'
   
   #s.libraries     = 'z', 'sqlite3' #表示依赖的系统类库，比如libz.dylib等
   s.vendored_frameworks = 'frameworks/MJNetwork.framework','frameworks/MJAISearchLib.framework' # 依赖的第三方/自己的framework

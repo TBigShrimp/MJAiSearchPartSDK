@@ -10,7 +10,7 @@
 #endif
 #endif
 
-#import "MJAiSearchPart.h"
+#import "NSString+DIcToJson.h"
 
 FOUNDATION_EXPORT double MJAiSearchPartSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char MJAiSearchPartSDKVersionString[];
